@@ -15,6 +15,7 @@ Users can like, comment, save reels and view partner profiles.
 - Comment on Reels
 - Edit/Delete Comments
 - Save Reels
+- Share Reels
 - User Profile
 - Logout
 
@@ -25,6 +26,7 @@ Users can like, comment, save reels and view partner profiles.
 - Upload Reels
 - Edit Reels
 - Delete Reels
+- Share Reels
 - Partner Profile
 - Logout
 
