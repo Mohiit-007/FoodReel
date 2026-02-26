@@ -1,0 +1,290 @@
+/* ===== Partner Profile - Modern Dark UI ===== */
+
+.partner-profile {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b1220 0%, #050a14 100%);
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+/* Main Card */
+.partner-card {
+  width: 100%;
+  max-width: 420px;
+  background: #111827;
+  border-radius: 22px;
+  padding: 22px 20px 28px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Header */
+.partner-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #3b82f6;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+.partner-info h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #f3f4f6;
+}
+
+.address,
+.phone {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Stats */
+.stats {
+  margin-top: 10px;
+}
+
+.stats strong {
+  font-size: 16px;
+  color: #3b82f6;
+}
+
+.stats span {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Divider */
+.partner-card hr {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 18px 0;
+}
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Video Tile */
+.video-tile {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.video-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.grid-video {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.video-tile:hover .grid-video {
+  transform: scale(1.08);
+}
+
+/* Overlay */
+.video-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    transparent
+  );
+}
+
+/* Loader */
+.profile-loader {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b1220;
+  color: #f3f4f6;
+  font-size: 16px;
+}
+
+.partner-header{
+position:relative;
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.partner-logout-btn{
+
+position:absolute;
+right:10px;
+top:5px;
+
+background:#ef4444;
+color:white;
+
+border:none;
+
+padding:6px 12px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-size:13px;
+
+transition:0.2s;
+
+}
+
+.partner-logout-btn:hover{
+background:#dc2626;
+}
+
+.video-tile{
+
+position:relative;
+
+border-radius:16px;
+
+overflow:hidden;
+
+}
+
+.delete-reel-btn{
+
+position:absolute;
+
+top:8px;
+right:8px;
+
+background:rgba(0,0,0,0.7);
+
+color:white;
+
+border:none;
+
+width:28px;
+height:28px;
+
+border-radius:50%;
+
+cursor:pointer;
+
+font-size:14px;
+
+opacity:0;
+
+transition:0.3s;
+
+}
+
+.video-tile:hover .delete-reel-btn{
+
+opacity:1;
+
+}
+
+.partner-header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* Right side buttons container */
+
+.partner-buttons{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:flex-end;
+  margin-left:auto;
+}
+
+
+.add-reel-btn{
+  background:#2d8cff;
+  color:white;
+  border:none;
+  padding:6px 6px;
+  border-radius:15px;
+  font-size:14px;
+  cursor:pointer;
+  min-width:110px;
+  text-align:center;
+}
+
+.edit-reel-btn{
+
+position:absolute;
+top:10px;
+right:45px;
+
+background:#3b82f6;
+color:white;
+
+border:none;
+padding:4px 8px;
+
+border-radius:8px;
+
+cursor:pointer;
+font-size:12px;
+
+}
+.delete-reel-btn{
+
+position:absolute;
+top:10px;
+right:10px;
+
+background:#ff4444;
+color:white;
+
+border:none;
+
+width:26px;
+height:26px;
+
+border-radius:50%;
+
+cursor:pointer;
+
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .partner-card {
+    max-width: 520px;
+  }
+
+  .grid-video {
+    height: 200px;
+  }
+}
+

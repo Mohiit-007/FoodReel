@@ -1,0 +1,54 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f7f7f8;
+  --text: #0f1720;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --accent-contrast: #ffffff;
+  --input-bg: #ffffff;
+  --border: #e6e9ee;
+  --radius: 10px;
+  --shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+
+/* allow explicit overrides when JS sets data-theme on <html> */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --surface: #f7f7f8;
+  --text: #0f1720;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --accent-contrast: #ffffff;
+  --input-bg: #ffffff;
+  --border: #e6e9ee;
+  --radius: 10px;
+  --shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+
+[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: #071025;
+  --text: #e6eef8;
+  --muted: #9aa6ba;
+  --accent: #60a5fa;
+  --accent-contrast: #07203a;
+  --input-bg: #071225;
+  --border: #14233a;
+  --radius: 10px;
+  --shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --surface: #071025;
+    --text: #e6eef8;
+    --muted: #9aa6ba;
+    --accent: #60a5fa;
+    --accent-contrast: #07203a;
+    --input-bg: #071225;
+    --border: #14233a;
+    --radius: 10px;
+    --shadow: 0 6px 18px rgba(2,6,23,0.6);
+  }
+}

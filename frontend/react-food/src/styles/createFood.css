@@ -1,0 +1,148 @@
+.create-food-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b132b, #071021);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
+
+.create-food-card {
+  width: 100%;
+  max-width: 420px;
+  background: #141c2f;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.create-food-card h2 {
+  margin-bottom: 8px;
+}
+
+.sub-text {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+.food-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed #2c3a5a;
+  border-radius: 14px;
+  background: #1a2338;
+  cursor: pointer;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.upload-box:hover {
+  border-color: #4f7cff;
+  background: #1d2842;
+}
+
+.upload-inner {
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.upload-icon {
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+.upload-inner p {
+  font-weight: 500;
+}
+
+.upload-inner span {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* Video Preview */
+.video-preview {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Inputs */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+input,
+textarea {
+  background: #1a2338;
+  border: 1px solid #2c3a5a;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4f7cff;
+}
+
+/* Button */
+.save-btn {
+  margin-top: 8px;
+  padding: 12px;
+  background: linear-gradient(90deg, #4f7cff, #5f85ff);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.save-btn:hover {
+  transform: translateY(-2px);
+}
+.preview-wrapper {
+  position: relative;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.remove-btn:hover {
+  background: #ff4d4d;
+}
