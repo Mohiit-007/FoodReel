@@ -53,6 +53,8 @@ const Profile = () => {
           {},
           {withCredentials:true}
       );
+          localStorage.removeItem("name");
+          localStorage.removeItem("partnerId");
           navigate("/partner/login");
       }catch(err){
         console.log(err);
