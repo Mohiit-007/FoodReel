@@ -1,43 +1,42 @@
-# FoodReels – MERN Stack Food Reel Platform
+# 🍔 FoodReels – MERN Stack Food Reel Platform
 
-FoodReels is a full-stack MERN application where food partners can upload short food videos and users can explore reels just like Instagram. Users can like, comment, save reels, and view partner profiles.
+FoodReels is a MERN stack web application where food partners upload short food videos and users can explore reels similar to Instagram.
 
-This project is built using the **MERN Stack (MongoDB, Express.js, React.js, Node.js).**
+Users can like, comment, save reels and view partner profiles.
 
 ---
 
 ## 🚀 Features
 
 ### 👤 User Features
-- User Signup & Login
-- Watch food reels (vertical scrolling)
-- Like reels ❤️
-- Comment on reels 💬
-- Edit/Delete comments
-- Save reels 🔖
-- View saved reels
-- User profile page
-- Logout feature
+- User Login & Signup
+- Watch Food Reels
+- Like Reels
+- Comment on Reels
+- Edit/Delete Comments
+- Save Reels
+- User Profile
+- Logout
 
 ---
 
 ### 🍽️ Partner Features
-- Partner Signup & Login
-- Upload food reels
-- Edit uploaded reels
-- Delete reels
-- Partner profile page
-- View uploaded reels
-- Logout feature
+- Partner Login & Signup
+- Upload Reels
+- Edit Reels
+- Delete Reels
+- Partner Profile
+- Logout
 
 ---
 
 ### 🎬 Reel Features
-- Vertical reel scrolling
-- Auto-play videos
-- Shuffle reels on refresh
+
+- Vertical Reel Scrolling
+- Auto-play Videos
+- Shuffle Reels on Refresh
 - Like / Comment / Save / Share
-- Instagram-style UI
+- Mobile Friendly UI
 
 ---
 
@@ -55,25 +54,85 @@ This project is built using the **MERN Stack (MongoDB, Express.js, React.js, Nod
 - MongoDB
 - Mongoose
 - JWT Authentication
-- Multer (File Upload)
+- Multer Upload
 
 ---
 
 ## 📂 Project Structure
+
+```
 FoodReels
 │
 ├── backend
-│ ├── controllers
-│ ├── routes
-│ ├── middleware
-│ ├── models
-│ └── server.js
 │
 ├── frontend
-│ ├── src
-│ │ ├── components
-│ │ ├── styles
-│ │ └── App.jsx
 │
 └── README.md
+```
 
+---
+
+## ⚙️ Installation
+
+### Backend
+
+```
+cd backend
+npm install
+npm start
+```
+
+Backend runs on:
+
+```
+http://localhost:8000
+```
+
+---
+
+### Frontend
+
+```
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔐 Authentication
+
+JWT authentication with cookies.
+
+Protected features:
+
+- Upload Reel
+- Edit Reel
+- Delete Reel
+- Like Reel
+- Save Reel
+- Comment Reel
+
+---
+
+## ⭐ Highlights
+
+- MERN Stack Project
+- Authentication System
+- Instagram-style Reels
+- Responsive UI
+- REST API
+
+---
+
+## 👨‍💻 Author
+
+Mohit Sahu
+
+MERN Stack Developer
