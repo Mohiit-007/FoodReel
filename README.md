@@ -1,4 +1,4 @@
-# 🍔 FoodReels – MERN Stack Food Reel Platform
+# FoodReels – MERN Stack Food Reel Platform
 
 FoodReels is a MERN stack web application where food partners upload short food videos and users can explore reels similar to Instagram.
 
