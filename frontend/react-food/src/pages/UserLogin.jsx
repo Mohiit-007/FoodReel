@@ -22,7 +22,11 @@ export default function UserLogin() {
 
       navigate("/");
     } catch (err) {
-      setError("Invalid email or password");
+      if(err.response && err.response.data.msg){
+        setError(err.response.data.msg);
+      }else{
+        setError("Something went wrong");
+      }
     }
   };
 

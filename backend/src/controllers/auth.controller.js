@@ -108,7 +108,7 @@ async function registerPartner(req,res){
         }
         const isPartnerAlreadyExists = await Partner.findOne({email});
         if(isPartnerAlreadyExists){
-            return res.status(400).send("User already existsssssss")
+            return res.status(400).send("User already exists")
         }
         const saltrounds = 10;
         const hashedpassword = await bcrypt.hash(password,saltrounds);

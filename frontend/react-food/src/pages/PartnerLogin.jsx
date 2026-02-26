@@ -25,7 +25,11 @@ export default function PartnerLogin() {
       localStorage.setItem("name", res.data.Partner.contactName);
       navigate(`/partner/${res.data.Partner._id}`);
     } catch (err) {
-      setError("Invalid email or password");
+      if(err.response && err.response.data.msg){
+        setError(err.response.data.msg);
+      }else{
+          setError("Something went wrong");
+      }
     }
   };
 
